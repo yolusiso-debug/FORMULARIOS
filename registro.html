@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <main>
+        <section>
+            <form action="">
+                <fieldset>
+                    <legend>Crear cuenta</legend>
+
+                    <label>Nombre completo</label>
+                    <input type="text" placeholder="Juana Pérez" required>
+
+                    <label>Género</label>
+                    <div class="grupo-radios">
+                        <label>Femenino</label>
+                        <input type="radio" value="femenino">
+
+                        <label>Masculino</label>
+                        <input type="radio" value="masculino">
+                        
+                        <label>Otro</label>
+                        <input type="radio" value="otro">
+                    </div>
+
+                    <label>Foto de perfil</label>
+                    <input type="file" accept="image/*">
+
+                    <label>Correo electrónico</label>
+                    <input type="email" placeholder="correo@ejemplo.com" required>
+
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="+1 234 567 8900">
+
+                    <label>País</label>
+                    <select>
+                        <option value="">Selecciona tu país</option>
+                        <option value="ar">Argentina</option>
+                        <option value="co">Colombia</option>
+                        <option value="mx">México</option>
+                        <option value="es">España</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label>Contraseña</label>
+                    <input type="password" placeholder="*********" required>
+
+                    <label>Acepto los términos y condiciones</label>
+                    <input type="checkbox" required>
+
+                    <label>Deseo recibir noticias por correo</label>
+                    <input type="checkbox">
+
+                    <input type="submit" value="Registrarme">
+                    <input type="reset" value="Limpiar">
+
+                    <p class="enlace">¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

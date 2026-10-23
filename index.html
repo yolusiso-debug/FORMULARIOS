@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/formularios.css">
+    <link rel="shortcut icon" href="img/img/img/Logo Redil Estereo.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="login.html" target="_blank">Login</a>
+            <a href="registro.html" target="_blank">Registro</a>
+        </nav>
+        <h1>Formularios en HTML</h1>
+        <p></p>
+    </header>
+
+    <main>
+        <section>
+            <!-- aquí van los bloques de formularios, uno por uno -->
+             <form action="">
+    <fieldset>
+        <legend>Texto</legend>
+        <p>Campos de texto básicos: simple, con placeholder, obligatorio (required), de solo lectura (readonly) y deshabilitado (disabled).</p>
+
+        <label for="">Input tipo texto</label>
+        <input type="text">
+        <br>
+
+        <label for="">Placeholder</label>
+        <input type="text" placeholder="Esto es ">
+        <br>
+
+        <label for="">Campo Obligatorio required</label>
+        <input type="text" placeholder="Campo Obligatorio" required>
+        <br>
+
+        <label for="">Campo solo Lectura readonly</label>
+        <input type="text" readonly placeholder="Campo solo lectura">
+        <br>
+
+        <label for="">Campo deshabilitado disabled</label>
+        <input type="text" disabled placeholder="Campo deshabilitado">
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </fieldset>
+</form>
+            <form action="">
+    <fieldset>
+        <legend>Contacto</legend>
+        <p>Campos especializados para datos de contacto: contraseña, correo electrónico, teléfono y URL, cada uno con su propio teclado y validación en el navegador.</p>
+
+        <label for="">Contraseña</label>
+        <input type="password" placeholder="********">
+        <br>
+
+        <label for="">Correo electrónico</label>
+        <input type="email" placeholder="correo@ejemplo.com">
+        <br>
+
+        <label for="">Número de teléfono</label>
+        <input type="tel" placeholder="+1 234 567 890">
+        <br>
+
+        <label for="">URL</label>
+        <input type="url" placeholder="https://ejemplo.com">
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </fieldset>
+</form>
+          <form action="">
+    <fieldset>
+        <legend>Numéricos</legend>
+        <p>Campos para valores numéricos: un número con límites (min/max) y un deslizador (range) para elegir un valor dentro de un rango.</p>
+
+        <label for="">Número</label>
+        <input type="number" min="0" max="100" step="1">
+        <br>
+
+        <label for="">Rango</label>
+        <input type="range" min="0" max="100" step="1">
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </fieldset>
+</form>
+            <form action="">
+    <fieldset>
+        <legend>Fecha y hora</legend>
+        <p>Selectores nativos de fecha y hora: fecha, fecha y hora combinadas, hora, semana del año y mes.</p>
+
+        <label for="">Fecha</label>
+        <input type="date">
+        <br>
+
+        <label for="">Fecha y hora</label>
+        <input type="datetime-local">
+        <br>
+
+        <label for="">Hora</label>
+        <input type="time">
+        <br>
+
+        <label for="">Semana</label>
+        <input type="week">
+        <br>
+
+        <label for="">Mes</label>
+        <input type="month">
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </fieldset>
+</form>
+        <form action="">
+    <fieldset>
+        <legend>Selección</legend>
+        <p>Controles de selección: elegir un color, marcar una casilla, elegir una opción de un
+grupo de radios y subir un archivo.</p>
+
+        <label for="">Color</label>
+        <input type="color">
+        <br>
+
+        <label for="">Casilla de verificación</label>
+        <input type="checkbox">
+        <br>
+
+        <label for="">Botón de radio</label>
+        <input type="radio" name="radioGroup">
+        <input type="radio" name="radioGroup">
+        <br>
+
+        <label for="">Archivo</label>
+        <input type="file">
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </fieldset>
+</form>
+            <form action="">
+    <fieldset>
+        <legend>Listas desplegables (select)</legend>
+        <p>Listas desplegables con el elemento select: una opción simple, una con valor
+preseleccionado (selected), una agrupada con optgroup, una de selección múltiple (multiple) y una
+deshabilitada (disabled).</p>
+
+        <label for="">Select simple</label>
+        <select name="">
+            <option value="">Selecciona una opción</option>
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select>
+        <br>
+
+        <label for="">Select con opción seleccionada</label>
+        <select name="">
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2" selected>Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select>
+        <br>
+
+        <label for="">Select con grupos (optgroup)</label>
+        <select name="">
+            <optgroup label="Frutas">
+                <option value="manzana">Manzana</option>
+                <option value="pera">Pera</option>
+            </optgroup>
+            <optgroup label="Verduras">
+                <option value="zanahoria">Zanahoria</option>
+                <option value="lechuga">Lechuga</option>
+            </optgroup>
+        </select>
+        <br>
+
+        <label for="">Select múltiple</label>
+        <select name="" multiple>
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select>
+        <br>
+
+        <label for="">Select deshabilitado</label>
+        <select name="" disabled>
+            <option value="opcion1">Opción 1</option>
+        </select>
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </fieldset>
+</form>
+        </section>
+    </main>
+</body>
+</html>
